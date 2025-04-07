@@ -14,6 +14,8 @@ Build instructions:
 ```
 > git clone https://github.com/framebluffer/hdrToKtx2
 
+> cd hdrToKtx2
+
 > git submodule update --init --recursive
 
 > dep_build.cmd <Debug | Release>   // To install the submodule dependencies
