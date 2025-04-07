@@ -1,5 +1,5 @@
 Dependencies:  
-Visual Studio 2022, for now.  
+Windows and Visual Studio 2022, for now.  
   
 You need to have installed the Vulkan SDK on your system.  
 Visit https://vulkan.lunarg.com/ to download and install it.  
