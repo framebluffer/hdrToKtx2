@@ -3,6 +3,7 @@ You need to have installed the Vulkan SDK on your system.
 Visit https://vulkan.lunarg.com/ to download and install it.  
 You also need Cmake  
 Visit https://cmake.org/download/ to download and install it.  
+Other dependencies are added as git submodules in the lib directory.  
   
 Build instructions:
 
@@ -11,9 +12,9 @@ Build instructions:
 
 > git submodule update --init --recursive
 
-> dep_build.cmd <Debug | Release>
+> dep_build.cmd <Debug | Release>   // To install the submodule dependencies
 
-> msbuild hdrToKtx2.sln
+> msbuild hdrToKtx2.sln /p:configuration=<Debug | Release>  // Depending on if you installed dependencies with Debug or Release
 ```
 
 Produces executable hdrToKtx2.exe in x64/<Debug | Release>/hdrToKtx2.exe  
