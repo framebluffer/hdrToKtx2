@@ -1,5 +1,8 @@
-Dependencies: You need to have installed the Vulkan SDK on your system.  
+Dependencies:  
+You need to have installed the Vulkan SDK on your system.  
 Visit https://vulkan.lunarg.com/ to download and install it.  
+You also need Cmake  
+Visit https://cmake.org/download/ to download and install it.  
   
 Build instructions:
 
