@@ -1,0 +1,9 @@
+[submodule "lib/basis_universal"]
+	path = lib/basis_universal
+	url = https://github.com/framebluffer/basis_universal
+[submodule "lib/glTF-IBL-Sampler"]
+	path = lib/glTF-IBL-Sampler
+	url = https://github.com/KhronosGroup/glTF-IBL-Sampler
+[submodule "lib/glm"]
+	path = lib/glm
+	url = https://github.com/g-truc/glm
