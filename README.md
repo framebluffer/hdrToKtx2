@@ -1,8 +1,12 @@
 Dependencies:  
+Visual Studio 2022, for now.  
+  
 You need to have installed the Vulkan SDK on your system.  
 Visit https://vulkan.lunarg.com/ to download and install it.  
+  
 You also need Cmake  
 Visit https://cmake.org/download/ to download and install it.  
+  
 Other dependencies are added as git submodules in the lib directory.  
   
 Build instructions:
