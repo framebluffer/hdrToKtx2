@@ -59,7 +59,7 @@ glm::vec3 tonemapPixelPBRNeutral(glm::vec3 c) {
 }
 
 glm::vec3 tonemapNone(glm::vec3 x) {
-  return glm::vec3();
+  return x;
 }
 
 glm::vec3 (*tonemapFunctions[])(glm::vec3) = {
@@ -81,6 +81,10 @@ void tonemapKtx2File(void *ktx2Blob, size_t size, IBLLib::OutputFormat format, T
   size_t bpp = 0;
 
   switch(format) {
+  case(IBLLib::OutputFormat::R8G8B8A8_UNORM): {
+    bpp = 4;
+    break;
+  }
   case(IBLLib::OutputFormat::R16G16B16A16_SFLOAT): {
     bpp = 8;
     break;

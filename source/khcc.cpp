@@ -241,6 +241,7 @@ int main(int argc, char **argv) {
     }
 
     if(compress || skyboxTonemapper != NONE) {
+
       std::vector<uint8_t> skyboxBlob;
       if(!readFile(outputSkybox, skyboxBlob)) {
         printf("Failed to read skybox file into buffer\n");

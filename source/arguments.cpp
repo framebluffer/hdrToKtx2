@@ -138,7 +138,7 @@ bool getArgument(const char *argument, int argc, char **argv, bool required) {
     }
   } else if(!strcmp(argument, "--irradianceResolution")) {
     if(!found) {
-      irradianceMapResolution = 64;
+      irradianceMapResolution = 0;
       return true;
     }
 
@@ -153,7 +153,7 @@ bool getArgument(const char *argument, int argc, char **argv, bool required) {
     }
   } else if(!strcmp(argument, "--radianceResolution")) {
     if(!found) {
-      radianceMapResolution = 256;
+      radianceMapResolution = 0;
       return true;
     }
 
@@ -168,7 +168,7 @@ bool getArgument(const char *argument, int argc, char **argv, bool required) {
     }
   } else if(!strcmp(argument, "--LUTResolution")) {
     if(!found) {
-      LUTResolution = 64;
+      LUTResolution = 32;
       return true;
     }
 
@@ -183,7 +183,7 @@ bool getArgument(const char *argument, int argc, char **argv, bool required) {
     }
   } else if(!strcmp(argument, "--skyboxResolution")) {
     if(!found) {
-      skyboxResolution = 512;
+      skyboxResolution = 0;
       return true;
     }
 

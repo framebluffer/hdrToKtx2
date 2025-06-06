@@ -39,9 +39,11 @@ bool createBasisCompressedHDRTexture(std::vector<uint8_t> &data, const char *out
 
   size_t mipImageSize = mipLevelInfos[0].m_byte_length;
 
+  // TODO(Markus): Option for non tonemapped uastc hdr, and tonemapped etc1s srgb
+
   basisu::basis_compressor_params compParams;
   compParams.m_hdr = true;
-	compParams.m_uastc_hdr_4x4_options.set_quality_level(3);
+	compParams.m_uastc_hdr_4x4_options.set_quality_level(3); // TODO(Markus): For skybox etc1s tonemapped
 	compParams.m_status_output = true;
 	compParams.m_compute_stats = true;
 	compParams.m_create_ktx2_file = true;
