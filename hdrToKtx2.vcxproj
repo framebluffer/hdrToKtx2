@@ -72,12 +72,12 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)lib\build\glm\glm\Debug;$(ProjectDir)lib\build\basis_universal\Debug;C:\dev\projects\tools\hdrToKtx2\lib\basis_universal\OpenCL\lib;$(ProjectDir)lib\build\glTF-IBL-Sampler\Ktx\lib;$(ProjectDir)lib\build\glTF-IBL-Sampler\Debug;$(VULKAN_SDK)\Lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectDir)lib\build\glm\glm\Debug;$(ProjectDir)lib\build\basis_universal\Debug;$(ProjectDir)lib\basis_universal\OpenCL\lib;$(ProjectDir)lib\build\glTF-IBL-Sampler\Ktx\lib;$(ProjectDir)lib\build\glTF-IBL-Sampler\Debug;$(VULKAN_SDK)\Lib;$(LibraryPath)</LibraryPath>
     <SourcePath>$(ProjectDir)source;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\dev\projects\tools\hdrToKtx2\lib\basis_universal\OpenCL\lib;$(ProjectDir)lib\build\glm\glm\Release;$(ProjectDir)lib\build\basis_universal\Release;$(ProjectDir)lib\build\glTF-IBL-Sampler\Ktx\lib;$(ProjectDir)lib\build\glTF-IBL-Sampler\Release;$(VULKAN_SDK)\Lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectDir)lib\basis_universal\OpenCL\lib;$(ProjectDir)lib\build\glm\glm\Release;$(ProjectDir)lib\build\basis_universal\Release;$(ProjectDir)lib\build\glTF-IBL-Sampler\Ktx\lib;$(ProjectDir)lib\build\glTF-IBL-Sampler\Release;$(VULKAN_SDK)\Lib;$(LibraryPath)</LibraryPath>
     <SourcePath>$(ProjectDir)source;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
